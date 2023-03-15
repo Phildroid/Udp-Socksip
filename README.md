@@ -6,7 +6,7 @@ Installation Script(UBUNTU ONLY)
 
 3. Execute the below script
 
-wget https://github.com/Phildroid/Udp-Socksip/blob/main/UDPserver.sh;chmod +x UDPserver.sh; ./UDPserver.sh 
+wget https://github.com/Phildroid/Udp-Socksip/blob/main/UDPserver.sh; chmod +x UDPserver.sh; ./UDPserver.sh 
 
 4. Allow the script to install, when done the server will reboot.
 
