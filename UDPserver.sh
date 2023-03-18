@@ -5,7 +5,7 @@
  lang="$lang_dir/lang" 
   
  idioam_lang(){ 
-   source <(curl -sSl 'https://raw.githubusercontent.com/rudi9999/SocksIP-udpServer/main/lang/lang') 
+   source <(curl -sSl 'https://raw.githubusercontent.com/Phildroid/Udp-Socksip/main/lang/lang') 
    title -ama 'IDIOMA/LANGUAGE' 
    echo " $(msg -verd "[0]") $(msg -verm2 '>') $(msg -azu "Español Default")" 
    n=0 
@@ -22,7 +22,7 @@
    let lg--  
    [[ ! -d $lang_dir/${list_lang[$lg]} ]] && mkdir -p $lang_dir/${list_lang[$lg]} || rm -rf $lang_dir/${list_lang[$lg]}/* 
    for arch in $listarq; do 
-     if ! wget -O $lang_dir/${list_lang[$lg]}/$arch "https://raw.githubusercontent.com/rudi9999/SocksIP-udpServer/main/lang/${list_lang[$lg]}/$arch" &>/dev/null ;then 
+     if ! wget -O $lang_dir/${list_lang[$lg]}/$arch "https://raw.githubusercontent.com/Phildroid/Udp-Socksip/main/lang/${list_lang[$lg]}/$arch" &>/dev/null ;then 
        rm -rf $lang_dir/${list_lang[$lg]} 
        echo '' > $lang ; exit 
      fi 
